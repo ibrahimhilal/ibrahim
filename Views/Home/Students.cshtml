@@ -1,0 +1,21 @@
+﻿@using fırst_WebProject.Models;
+@model List<Student>
+<div class"container">
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div style="padding-left:350px;padding-top:40px;padding-bottom:40px" class="card col-sm-6">
+                <div  class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> Name : @item.Name</li>
+                        <li class="list-group-item"> Nationality : @item.Nationality</li>
+                        <li class="list-group-item"> Gender : @item.Gender</li>
+                        <li class="list-group-item"> BirthDay : @item.BirthDay</li>
+                        <li class="list-group-item"> Mobile : @item.Modil</li>
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+</div>

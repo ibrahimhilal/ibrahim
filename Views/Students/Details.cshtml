@@ -1,0 +1,61 @@
+﻿@model fırst_WebProject.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<div style="padding:50px 50px">
+    <div>
+        <h2>Student Details</h2>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Nationality)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nationality)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Gender)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Gender)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.BirthDay)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.BirthDay)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Modil)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Modil)
+            </dd>
+
+           
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Student_Id }) |
+        @Html.ActionLink("Back to List", "Index", new { id = Model.Department_Id })
+    </p>
+</div>
